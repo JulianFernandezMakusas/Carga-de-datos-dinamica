@@ -4,13 +4,14 @@
 <head>
 <meta>
 <title>Ver Personas</title>
+<link rel="stylesheet" type="text/css" href="estiloVerPersona.css"/>
 </head>
 <body>
 	<c:if test="${not empty listaPersona}">
 
 		<c:set var="hayDatos">Hay datos</c:set>
 
-		<table>
+		<table class = "tabla">
 
 			<c:forEach var="persona" items="${listaPersona}">
 
@@ -29,6 +30,8 @@
 		</table>
 
 	</c:if>
-
+	<jsp:include page="BarraDeAbajo.jsp">
+	<jsp:param value= "Pagina creada por el menor que tres (?" name = "texto"/>
+	</jsp:include>
 </body>
 </html>
