@@ -11,9 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.julian.modelo.Persona;
 
-/**
- * Servlet implementation class ServletController
- */
 @WebServlet("/ServletCargarPersonas")
 public class ServletCargarPersonas extends HttpServlet {
 	

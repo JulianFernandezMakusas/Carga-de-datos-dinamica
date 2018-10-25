@@ -28,5 +28,8 @@ public class Persona {
 		this.nombre = nombre;
 		this.apellido = apellido;
 	}
+	public Persona() {
+		// TODO Auto-generated constructor stub
+	}
 
 }

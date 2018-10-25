@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Index</title>
-<link rel="stylesheet" type="text/css" href="EstiloIndex.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Login</title>
 </head>
 <body>
-	Cargar datos
-
-	<form action="ServletCargarPersonas" method="post">
-		<label for="dni">DNI</label> <input type="text" name="dni"><br>
-		<label for="nombre">Nombre</label> <input type="text" name="nombre"><br>
-		<label for="apellido">Apellido</label><input type="text" name=apellido><br>
-		<input type="submit" value="Cargar datos">
+ Login
+	<form action="ControladorLogin" method="post">
+		<label for="user">Usuario</label> <input type="text" name="user"><br>
+		<label for="password">Contraseña</label> <input type="password" name="password"><br>
+		<input type="submit" value="Iniciar sesion">
 	</form>
-
-	Ver datos
-	<form action="ServletVerPersonas">
-		<input type="submit" value="Ver todos los datos">
-	</form>
-	<jsp:include page="BarraDeAbajo.jsp">
-	<jsp:param value= "Pagina creada por el menor que tres (?" name = "texto"/>
-	</jsp:include>
+	
 </body>
 </html>

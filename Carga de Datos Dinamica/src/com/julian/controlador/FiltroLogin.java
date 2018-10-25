@@ -23,8 +23,8 @@ public class FiltroLogin implements Filter {
 			HttpServletResponse res = (HttpServletResponse) response;
 			String uri = req.getRequestURI();
 			HttpSession session = req.getSession();
-			if (session== null && !uri.endsWith("LoginServlet")) {
-			res.sendRedirect("index.html");
+			if (session== null && !uri.endsWith("Index.jsp")) {
+			res.sendRedirect("Index.jsp");
 			}else {
 			chain.doFilter(request, response);
 			}
